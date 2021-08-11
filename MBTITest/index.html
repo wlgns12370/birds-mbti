@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naver-site-verification" content="649de7772c990f3db4cc034bf481b496167c33e8" />
+        <title>새로 보는 MBTI</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Yeon Sung', cursive;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="container">
+        <article class="start">
+            <h1 class="mt-5 text-center">내가 새가 된다면?</h1>
+            <img class="rounded mt-5" id="img" src="images/새와친구들.png" alt="testmain">
+            <button type="button" class="btn btn-primary btn-lg mt-5" onclick='start();'>테스트 시작하기</button>
+            
+            <footer class="row tm-page-footer">
+                <p class="col-12 tm-copyright-text mb-0">
+                  Copyright &copy; Knu CSE 
+                  <a href="https://www.instagram.com/keep._.hun/" rel="nofollow" class="tm-copyright-link">developer
+                  </a>
+                  &
+                  <a href="https://www.instagram.com/xeoz_in/" rel="nofollow" class="tm-copyright-link">designer
+                  </a><br>
+                  Advertising inquiry ahffk12370@naver.com
+                </p>
+            </footer>
+        </article>
+
+        <article class="question">
+            <div class="progress mt-5">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h2 class="text-center mt-5" id="title">문제</h2>
+            <input type="hidden" id="type" value="EI">
+            <button type="button" id="A" class="btn btn-primary btn-lg mt-5"></button>
+            <button type="button" id="B" class="btn btn-primary btn-lg mt-5"></button>
+        </article>
+
+        <article class="result">
+            <img class="rounded mt-5" id="pic" src="images/물음표.png" alt="result">
+            <h1 class="text-center mt-5" id="name">새 이름</h1>
+            <h3 class="text-center mt-5" id="explain">설명</h3>
+            <h5 class="text-center mt-5" id="Rexplain">긴 설명</h5>
+          
+
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="ad-banner">
+            <ins class="kakao_ad_area" style="display:none;" 
+            data-ad-unit    = "DAN-E3GBmTELhbjw6Yct" 
+            data-ad-width   = "320" 
+            data-ad-height  = "100"></ins> 
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+        <div class="ad-banner2">
+            <ins class="kakao_ad_area" style="display:none;" 
+            data-ad-unit    = "DAN-yBmlb2CGlestSr5C" 
+            data-ad-width   = "320" 
+            data-ad-height  = "100"></ins> 
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+        <br>
+        <br>
+
+        <script type="text/javascript" async> 
+            var url_default_ks = "https://story.kakao.com/share?url=";
+            var url_default_fb = "https://www.facebook.com/sharer/sharer.php?u=";
+            var url_default_tw_txt = "https://twitter.com/intent/tweet?text="; 
+            var url_default_tw_url = "&url="; 
+            var url_default_naver = "http://share.naver.com/web/shareView.nhn?url="; 
+            var title_default_naver = "&title="; 
+            var url_this_page = location.href; 
+            var title_this_page = document.title; 
+            var url_combine_ks = url_default_ks + url_this_page; 
+            var url_combine_fb = url_default_fb + url_this_page; 
+            var url_combine_tw = url_default_tw_txt + document.title + url_default_tw_url + url_this_page; 
+            var url_combine_naver = url_default_naver + encodeURI(url_this_page) + title_default_naver + encodeURI(title_this_page); 
+            </script>
+            
+            <!-- SNS share buttons --> 
+            <div style="width: 100%; text-align: center; margin-bottom: 64px;"> 
+            <!-- Facebook share button --> 
+            <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;">
+            <img src="https://lh3.googleusercontent.com/proxy/oL-f_3Cou1sFcPjA_ERI4pqm5pSN1m1T-h8Ksa77XfRe-EjERV3bjuVOr-zehg9NSlSmYSOZGYGFggPih6HPyS4-ppuCVIHoBS6U4V47qRsX0vH4pE0Bun07kA" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+            <!-- Twitter share button --> 
+            <a href="" onclick="window.open(url_combine_tw, '', 'scrollbars=no, width=600, height=600'); return false;">
+            <img src="https://blog.kakaocdn.net/dn/AcIGI/btqxtp2xkg2/EGABG3i2NAMq3kRu1VaGzk/img.jpg" title="트위터로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+            <!-- Naver share button --> 
+            <a href="" onclick="window.open(url_combine_naver, '', 'scrollbars=no, width=600, height=600'); return false;">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAmVBMVEX///8AvxgAvQDY9eJP2ISN4KIAvgQAwSPb+u7N9Nyq784AwR259NuW3JkAvhH8//9W0nIAwyslyUrz/vrB8tay5rhq25CG35276sLN9+VZ1X0AxDXr+/NHzmN725TB7s2B4qUgxj+h57Y0ylOx68Wq5LJ757KG5rK99d/i+e6n6b1m1oFr2YzJ89uY5bAzzV43xkNQ1Xlg0nJ9EnlhAAADxUlEQVR4nO3da1faQBCH8d1BA166GLFC5WaqvaACrd//w5WcQ6lo2GQWLTNz/s/7LPwOgTUx2TiHEEIIIYQQQgghhBBCqHHdq8/XR+LqD768k+/kJiOhDfujd/CNiYIXWiCa9PbzdftEh2bEo3y6F3As3OfLz/F2D2AhH7iKrpOFFyqAK+LXROCxEqAPWSsJ2MrE/oa+LrtLEmrZR8voPgHYUQT0oUgQTjQJPc35wlzNt7CMJmygqp10tZvyf2umyoRD9t/g35QJfYcrVDPdr+NP+hBKC0II5QchhPKDEEL5QQih/CCEUH4QQig/CCGUH4QQyg9CCOUH4X7CEL+CMLZp+pb/Uxja56eRbiMj0ffYlj8YxI8V5vGhIhfm0M/YhidihO34ULP2zss66NyE0D3sHMuKcPd+akbY27WfmhG6+x2j2RG6x+rhDAl7w8r91JDQXVWOZ0nonqoGNCXsFhX7qSmhm1fce2NLWHXVsTFhxX5qTFhx3bE14dtBzQnd8tWo9oStsP1VtCd0i+1hDQpf7acWhaOt+8UsCrdPaZgUbp3SsCkcvTilYVP48pSGUaG72YxtVdjb3PlnVfjvxjizws2pN7vCv4eKdoVuTtaF61NvloXuMrMunJd/gpsWuj5ZF7oisy7sUDAuXL2GdaFb2hBGFuOa2RB+irz24tSEMLYoR3Q1CzVCOua+uDphyvI4uoRh2DUu9PRoXZi2FpcqYThLWYZTk9DT0rrQp0wZuoSe+GsbKhOGgr1arDKhpyfrQk/c9XDVCQMx91N1Qk9j60JPC+tC5nK4CoU+KzhHGRqFvClDpZB1lKFTGPLmRxk6hZ4urAsZK6hrFQaaGRf67LLhlKFW2Hhpar1CT1fWhSFvdJShWNhwytAsbDZlqBYG32DKUC30dFc/ZegWeupbF3o6sS4Mw7opQ7uw/n9u6oWeHqwL66YMOcL46i27hXXPaRIj9P4sVvR9Rbc8YzzM54OFIVb6lpynFWElLAjlByGE8oMQQvlBCKH8IIRQfhBCKD8IIZQfhBDKD0II5QchhPLjCxfmhQNdwpB3uMLqNdTFFn5xga6bcf4De/DoN1sYezqMwGjAF041CUNg36C6qvp5DTLj359atuu5IgILWcrt/s6N1RCZ9zVu6nCu2Dlk9JwGLK+6UkGky5SfmTUxyw799uujprfgVBML6d/FQM/pn2BZ74kk76qB2jXXqDao9ZitkBJbva/8eL8PcN1ocHRXtKWVF8tJs9unmtXrSGu2z+8LQgghhBBCCCGEEEIIvekPP5Cn33NBThsAAAAASUVORK5CYII=" title="네이버로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+            <!-- Kakao story share button --> 
+            <a href="" onclick="window.open(url_combine_ks, '', 'scrollbars=no, width=600, height=600'); return false;">
+            <img src="data:image/png;base64,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" title="카카오스토리로 공유하기" class="sharebtn_custom" style="width: 48px;"></a>
+            </div>
+
+          
+
+
+            <footer class="row tm-page-footer">
+                <p class="col-12 tm-copyright-text mb-0">
+                  Copyright &copy; Knu CSE 
+                  <a href="https://www.instagram.com/keep._.hun/" rel="nofollow" class="tm-copyright-link">developer
+                  </a>
+                  &
+                  <a href="https://www.instagram.com/xeoz_in/" rel="nofollow" class="tm-copyright-link">designer
+                  </a><br>
+                  Advertising inquiry ahffk12370@naver.com
+                </p>
+            </footer>
+
+        </article>
+        <input type="hidden" id="EI" value="0"> 
+        <input type="hidden" id="SN" value="0">
+        <input type="hidden" id="TF" value="0">
+        <input type="hidden" id="JP" value="0">
+
+    
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            var num=1;
+            var q = {
+                1 : { "title" : "문제 1번: 새학기 시작!! 옆자리 앉은 친구에게 나는??", "type" : "EI", "A" : "친구에게 먼저 인사한다.", "B" : "친구가 먼저 인사할 때 까지 기다린다." },
+                2 : { "title" : "문제 2번: 여행을 가는 나는?", "type" : "JP", "A" : "몇시에 어디를 갈지 정확한 계획을 세운다!", "B" : "아 몰랑! 대충 어디갈지만 정한다!" },
+                3 : { "title" : "문제 3번: 오늘 술자리가있다. 나는 가장자리인가? 중앙인가?", "type" : "EI", "A" : "중앙이지!!", "B" : "아,, 나는 가장자리가 좋아!" },
+                4 : { "title" : "문제 4번: 화가 났을 때 나의 첫 반응은 ?", "type" : "SN", "A" : "화난 이유에 대해 이성적으로 말한다", "B" : "분노에 차올라 울컥한다" }, //이거
+                5 : { "title" : "문제 5번: 나는 팀플에서? ", "type" : "SN", "A" : "현실적이고 빠르게 팀플을 한다", "B" : "특별한 아이디어는 없을까? 고민한다" },//이거
+                6 : { "title" : "문제 6번: 오늘따라 친구의 표정이 좋지 않아. 이럴때 나는..??", "type" : "TF", "A" : "평소와 다른 어떤 일이 있었나? 한 번 물어봐야겠어!", "B" : "친구의 표정이 우울해보여,ㅠ 위로해줘야겠어!" },
+                7 : { "title" : "문제 7번: 오늘 점심을 뭐 먹을지 생각하던 도중??", "type" : "SN", "A" : "어! 이거 맛있어 보인다! 오늘은 이걸로 먹어야겠다.", "B" : "리뷰 이벤트를 하면 치즈볼을 준다고?? 오늘은 여기로 시켜야 되겠다." },
+                8 : { "title" : "문제 8번: 친한친구가 이별을 했다. 그때 나는??", "type" : "TF", "A" : "왜 헤어졌어??", "B" : "뭐라고!?!?" },
+                9 : { "title" : "문제 9번: 친구가 지갑을 잃어버려서 걱정하고 있는데, 나는 어떤 말을 하는가?", "type" : "TF", "A" : "카드 있으면 일단 정지시키고, 마지막으로 본 곳부터 가보자.", "B" : "괜찮아? 금방 찾을 수 있을거야. 나도 같이 찾아볼게." },
+                10 : { "title" : "문제 10번: 좋아하는 사람에게 고백하려고 한다.", "type" : "JP", "A" : "철저한 계획을 잡고 고백할 타이밍을 노린다.", "B" : "분위기를 보고 즉흥적으로 고백한다." },
+                11 : { "title" : "문제 11번: 친구가 좋아하는 이성에게 끌고 가 같이 대화를 나누자고 한다.", "type" : "EI", "A" : "같이 웃으며 즐겁게 대화한다.", "B" : "쑥스러워서 조용히 웃고 어색하게 있는다." },
+                12 : { "title" : "문제 12번: 마라톤 중 얼마 남지 않았는데, 너무 힘이든다. 이 때에 드는 생각은?", "type" : "JP", "A" : "마침표를 찍어야만 해낸거야! 천천히라도 끝까지 하자!", "B" : "내 한계를 경험해본거야! 참가에 의의를 두고 다음에 또 참여하자!" }
+            }
+            var result = {
+                "ISTJ" : { "name" : "딱다구리", "explain" : "책임감이 강한 딱다구리!", "img" : "images/딱다구리.png","Rexplain" : "원리 원칙적인 사람이어서 즉흥적인 것을 싫어해요.<br>협동하는 것 보다 혼자서 일을 잘해서 혼자 일 처리를 잘해요.<br>철벽을 매우 잘 치고 약속 시간을 잘 지키는 사람이에요." }, 
+                "ISFJ" : { "name" : "직조새", "explain" : "그저 빛 직조새!", "img" : "images/직조새.png" ,"Rexplain" : "아싸중에 인싸,인싸중에 아싸! 게으른 완벽주의자에요.<br>다른 사람의 감정을 누구보다 먼저 느끼고 연애를 하면 오래가요.<br>다른 사람이 볼 때는 재미없게 사는 것 퍼럼 보이지만 자기 선에서는 매우 만족하고 있어요."},
+                "ISTP" : { "name" : "뻐꾸기", "explain" : "적응하는 뻐꾸기!", "img" : "images/뻐꾸기.png","Rexplain" : "처음에는 낯을 가리지만 친해지면 말이 많아지고 장난을 잘 쳐요.<br>인터넷 서핑을 하다가 즉흥적이고 충동적으로 사고 싶은 것을 사요.<br>솔직한 것을 좋아해 상대가 거짓말 하는 것을 많이 싫어해요." },
+                "ISFP" : { "name" : "로빈", "explain" : "나무늘보 같은 로빈!", "img" : "images/로빈.png","Rexplain" : "낯은 엄청나게 가리지만 사람들 만나는 것은 좋아하는 사람이에요.<br>집순이,집돌이가 많아 집 밖으로 나오는 것을 싫어하지만 집을 나오면 그 누구보다 잘 놀아요.<br>남들이 잘 인지하지 못하는 감정을 알아채 은은한 배려를 잘해요." },
+                "ENFP" : { "name" : "파랑새", "explain" : "어우!~ 그놈의 엔프피 파랑새!", "img" : "images/파랑새.png","Rexplain" : "상상력이 풍부하고,즉흥적인 사람이라 산만하고 가만히 있는 것을 싫어해요.<br>리액션을 잘해주고 공감을 잘해주며 감정이 얼굴에 다 드러나고 눈치가 빨라요.<br>순간 집중력이 좋아서 무언가를 벼락치기 해도 성과가 잘 나오지만 끈기가 없어서 무언가를 쉽게 질려요." },
+                "ENTP" : { "name" : "앵무새", "explain" : "새로움을 추구하는 앵무새!", "img" : "images/앵무새.png","Rexplain" : "사람들을 이끄는 것에 타고난 기질이 있고 좋아하기도 해요.<br>기가 막히는 사업 아이템이나 아이디어를 가지고 있어요.<br>직설적이고 솔직하게 표현하는 것을 좋아해 의외로 냉정해요." },
+                "ENFJ" : { "name" : "공작새", "explain" : "예민하만 예쁜한 공작새!", "img" : "images/공작새.png","Rexplain" : "남들에게 보호받고 싶어하고 싫은 소리를 못 하며 상처를 많이 받아요.<br>오지랖이 넓어 불의를 보면 못 참고 상황을 해결하려고 해요.<br>긍정적인 생각을 많이 하고 감수성이 매우 풍부한 사람이에요." },
+                "ENTJ" : { "name" : "독수리", "explain" : "누가뭐라해도 단호한 독수리!", "img" : "images/독수리.png" ,"Rexplain" : "선천적으로 리더인 경우가 많고 마음씨가 매우 따스해요.<br>무언가를 나서는 것보다 남들 하는 게 맘에 안 들어서 나서는 거예요.<br>속까지 매의 눈으로 샅샅이 보고 상황 판단을 하고 감성팔이가 절대 안 먹혀요!"},
+                "ESTP" : { "name" : "물총새", "explain" : "팩폭폭격기 피피피 물총새!", "img" : "images/물총새.png","Rexplain" : "전형적으로 어른들이 좋아하는 상이에요.<br>굉장히 직설적이어서 상처받는 사람들이 많아요.<br>어떠한 모임에서 어느새 자신이 분위기를 주도하고 있어요." }, 
+                "ESFP" : { "name" : "잉꼬", "explain" : "소심이 뭐야?? 개방적인 잉꼬!", "img" : "images/잉꼬.png" ,"Rexplain" : "모임 장소에서 침묵 흐르는 것을 싫어해서 침묵을 없애려고 노력해요.<br>평소 거절을 잘하지 못하는 성격이라는 말을 많이 들어요.<br>자존감이 높아서 무엇을 해도 잘할 사람이에요."},
+                "ESTJ" : { "name" : "까치", "explain" : "어우!~ 계획좀 그만짜 까치!", "img" : "images/까치.png","Rexplain" : "정직한 사람입니다. 겉과 속이 일치해 거짓말을 잘 못 합니다.<br>호불호가 확실하고 모임을 하게 된다면 사람이 많은 것을 싫어합니다.<br>일 처리를 못하는 것을 매우 싫어하고 일을 잘해 인정받는 사람입니다."},
+                "ESFJ" : { "name" : "펭귄", "explain" : "너도울면 나도울어 펭귄!", "img" : "images/팽귄.png" ,"Rexplain" : "어색한 자리에서 말을 먼저 잘 걸고 새로운 사람과 술자리를 좋아해요.<br>남들에게 다 맞춰주고 티를 내지 않고 묵묵히 잘 참아 보살이에요.<br>인간관계가 틀어지면 스트레스를 많이 받고, 남들을 무시하는 사람을 싫어해요."},
+                "INFJ" : { "name" : "벌새", "explain" : "착해도 너무 착하잖아! 벌새!", "img" : "images/벌새.png" ,"Rexplain" : "인간관계 유지를 잘하지만 내 사람에게 더 잘해줘요.<br>생각이 많지만 신중하고 완벽주의자 성향을 가지고 있어요.<br>감수성이 풍부하여 혼자서 생각 정리할 시간이 필요해요."},
+                "INTJ" : { "name" : "부엉이", "explain" : "퀸카라면 너일거야~ 부엉이!", "img" : "images/부엉이.png","Rexplain" : "완벽한 것을 추구하는 사람이라서 매우 계획적이에요.<br>눈치 잘 안 보고 자기가 하고 싶은 것이 생기면 무조건 해야 해요.<br>독창성을 인정받을 수 있고 권한이 주어지는 일을 하고 싶어 해요."},
+                "INFP" : { "name" : "비둘기", "explain" : "평화의 상징 비둘기!", "img" : "images/비둘기.png","Rexplain" : "마무리가 정리가 안 되어 있으면 시작은 하지만 끝은 공황 하게 되어요.<br>현실에서보다 온라인에서 자주 보이는 MBTI이에요.<br>안 친한 사람에게 경계심이 많아서 진입장벽이 높아요." },
+                "INTP" : { "name" : "까마귀", "explain" : "똑부러진 까마귀!", "img" : "images/까마귀.png","Rexplain" : "혼자 있는 것을 좋아하고 게으른 천재가 많아요.<br>매우 논리적인 사람이라 비논리적인 사람을 보면 화가 나요.<br>대부분 책을 좋아해서 알고 있는 것이 많아요." }
+            }
+            function start(){
+                $(".start").hide();
+                $(".question").show();
+                next();
+            }
+            $("#A").click(function(){
+                var type = $("#type").val();
+                var preValue = $("#" + type).val();
+                $("#" + type).val(parseInt(preValue)+1);
+                next();
+            });
+            $('#B').click(function(){
+                next();
+            });
+            function next(){
+                if(num==13){
+                    $(".question").hide();
+                    $(".result").show();
+                    var mbti = "";
+                    ($("#EI").val() < 2) ? mbti += "I" : mbti += "E";
+                    ($("#SN").val() < 2) ? mbti += "N" : mbti += "S";
+                    ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
+                    ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
+                    alert(mbti);
+                    $("#pic").attr('src', result[mbti]["img"]);
+                    $("#name").html(result[mbti]["name"]);
+                    // var result_string = result[mbti]["explain"];
+                    // var string_arr = result_string.split("!")
+                    // var step;
+                    // for (step = 0; step < length(string_arr); step++) {
+                    //     $("#explain").html(string_arr[step]);
+                    //     $("#explain").html(<br/>);
+                    // }
+                    $("#explain").html(result[mbti]["explain"]);
+                    $("#Rexplain").html(result[mbti]["Rexplain"]);
+                    
+                }
+                else{
+                    $(".progress-bar").attr('style', 'width: calc(100/12*'+num+'%)');
+                    $("#title").html(q[num]["title"]);
+                    $("#type").val(q[num]["type"]);
+                    $("#A").html(q[num]["A"]);
+                    $("#B").html(q[num]["B"]);
+                    num++;
+                }
+            }
+        </script>
+    </body>
+</html>

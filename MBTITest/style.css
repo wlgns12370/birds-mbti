@@ -1,0 +1,42 @@
+body{
+    font-family: 'Gamja Flower', cursive;
+    line-height: 20px;
+}
+.title{
+    font-size: 80px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+}
+#img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.question{
+    display: none;
+
+}
+.result{
+    display: none;
+
+}
+#pic{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+button{
+    margin: 5%;
+}
+.ad-banner{
+    width: 320px;
+    margin: 0 auto;
+}
+.ad-banner2{
+    width: 320px;
+    margin: 0 auto;
+}
